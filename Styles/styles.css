@@ -1,0 +1,417 @@
+@font-face {
+    font-family: "Baunk";
+    src: url("../Assets/fonts/Baunk.otf") format("otf");
+}
+@font-face {
+    font-family: "Gruppo";
+    src: url("../Assets/fonts/Gruppo-Regular.ttf") format("ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    overflow-x: hidden;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    background-color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Bold and Italic styles */
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* Text and heading styles */
+h4 {
+    font-family: "Gruppo", sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: "Gruppo", sans-serif;
+    font-size: 19px;
+    color: black;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: Baunk;
+    color: #E6213C;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+h1 {
+    font-family: Baunk;
+    color: #E6213C;
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0;
+}
+
+p {
+    font-size: 17px;
+}
+
+/* Mobile Navigation */
+nav.mobile-nav {
+    width: 100%;
+}
+.mobile-nav .nav-container {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.mobile-nav .Logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-family: "Gruppo", sans-serif;
+    font-size: 20px;
+}
+.mobile-nav .hamburger {
+    display: block;
+    cursor: pointer;
+}
+.mobile-nav .hamburger img {
+    width: 30px;
+    height: auto;
+}
+.mobile-nav .nav-menu {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    z-index: 999;
+    display: none;
+    padding: 0;
+}
+.mobile-nav .nav-menu li {
+    margin: 10px 0;
+    text-align: center;
+}
+.mobile-nav .nav-menu li a {
+    text-decoration: none;
+    color: black;
+    font-family: "Gruppo", sans-serif;
+    font-size: 20px;
+    display: block;
+    padding: 10px 0;
+}
+.mobile-nav .nav-active {
+    display: block;
+    top: 12vh;
+}
+
+/* Desktop Navigation */
+nav.desktop-nav {
+    display: none;
+}
+
+
+/* Hero Section */
+#hero {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.hero-text h3 {
+    margin-bottom: 30px;
+}
+#heroe {
+    justify-content: center;
+    align-content: center;
+}
+.hero-text {
+    text-align: center;
+}
+.imagen-yo {
+    width: 100%;
+}
+.imagen-yo img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover; 
+}
+/* About Section */
+#sobre-mi {
+    background-color: #E6213C;
+    align-content: center;
+    padding: 50px 30px 50px;
+}
+.texto-sobre-mi {
+    text-align: center;
+    margin-left: 0;
+}
+.texto-sobre-mi h2 {
+    color: black;
+    margin-bottom: 10px;
+}
+
+/* Information Section */
+#informacion {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+}
+.experticia {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+}
+.caja {
+    display: inline-flex;
+    padding: 1px 20px;
+    align-content: center;
+    gap: 5px;
+    border-radius: 46px;
+    border: 1px solid #E6213C;
+    background-color: white;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.educacion {
+    margin-bottom: 5vh;
+}
+#box-1, #box-2 {
+    width: 80%;
+}
+#box-2 ul li {
+    list-style-image: url("../Assets/img/Ellipse 23.svg");
+}
+.sub-seccion {
+    margin-bottom: 5vh;
+}
+.sub-seccion h2 {
+    margin-bottom: 30px;
+}
+.circulo {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    padding: 10px;
+}
+
+/* Button */
+button {
+    text-decoration: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    padding: 0;
+    display: flex;
+    padding: 10px 25px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 21px;
+    background: #E6213C;
+    font-family: "Gruppo", sans-serif;
+    font-size: 30px;
+}
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Media Queries */
+
+
+@media (min-width: 768px){
+
+    #hero {
+        display: flex;}
+
+    #hero hr{
+        display: none;
+    }
+
+    .imagen-yo img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        object-fit: cover; 
+    }
+
+    .hero-text {
+        text-align: left;
+    }
+
+    #sobre-mi {
+        background: linear-gradient(to top, #f0f0f0, white);
+        align-content: center;
+        padding: 50px 30px 50px;
+    }
+    
+
+    .texto-sobre-mi {
+        text-align: left;
+        margin-left: 0;
+    }
+
+    
+
+}
+@media (min-width: 1024px) {
+
+
+    h1{
+        font-family: Baunk;
+        color: #E6213C;
+        font-size: 5rem;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin: 0;
+        z-index: 999;
+    }
+    .mobile-nav {
+        display: none;
+    }
+
+    nav.desktop-nav {
+        display: block;
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        box-sizing: border-box;
+        background-color: rgba(255, 255, 255, 0.8); 
+        backdrop-filter: blur(10px); 
+        z-index: 1000; 
+    }
+    .desktop-nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 30%;
+    }
+    .desktop-nav ul li {
+        list-style: none;
+        display: flex;
+        text-transform: uppercase;
+        align-items: center;
+    }
+    .desktop-nav ul li a {
+        text-decoration: none;
+        color: black;
+        font-family: "Gruppo", sans-serif;
+        font-size: 20px;
+    }
+    .desktop-nav ul li a:hover {
+        color: #E6213C;
+    }
+
+
+    /*hero*/
+    
+    #hero{
+        display: inline;
+        height: auto;
+        
+    }
+    
+    #heroe {
+        width: 90%;
+        display: flex;
+        height: 80vh;
+        place-content: center flex-end;
+        align-items: flex-end;
+    }
+    .hero-text{ 
+       
+        text-align: right;
+        width: 50%;
+    }
+    .imagen-yo {
+        position: -webkit-sticky;
+        position: -moz-sticky;
+        position: -ms-sticky;
+        position: -o-sticky;
+        position: sticky;
+        height: 0;
+        width: 50%;
+        top: 15vh;
+       
+    }
+
+    hr {
+        display: none;
+    }
+
+    .imagen-yo {
+        position: -webkit-sticky;
+        position: -moz-sticky;
+        position: -ms-sticky;
+        position: -o-sticky;
+        position: sticky;
+        height: 0;
+        width: 50%;
+        top: 15vh;
+        
+       
+    }
+
+    #sobre-mi {
+        width: 90%;
+        height: 90vh;
+        align-content: center;
+        background: white;
+        margin: 0px 50px 0px;
+    }
+    
+    .texto-sobre-mi{
+        text-align: left;
+        margin-left: 50%;
+    }
+    
+
+    #informacion {
+        margin-top: 10vh;
+        
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 20vh;
+        flex-direction: row;
+        padding-right: 5vh;
+        padding-left: 5vh;
+    }
+    #box-1, #box-2 {
+        width: 30%;
+    }
+
+    
+}
