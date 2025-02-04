@@ -261,10 +261,14 @@ button a {
         width: 100%;
         height: auto;
         
+        
     }
 
     .hero-text {
         text-align: left;
+        opacity: 0;
+        transform: translateX(-100px);
+        transition: opacity 1.5s ease-out, transform 1.5s ease-out;
     }
 
     #sobre-mi {
@@ -279,6 +283,20 @@ button a {
         margin-left: 0;
     }
 
+  .texto-mayor {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.hero-text.visible,
+.texto-mayor.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+    
+  
+    
     
 
 }
@@ -345,7 +363,7 @@ button a {
     #heroe {
         width: 99%;
         /* display: flex; */
-        height: 80vh;
+        height: 100vh;
         place-content: center flex-end;
         align-items: flex-end;
         margin-top: 10vh;
@@ -361,15 +379,26 @@ button a {
         display: flex;
         justify-content: center;
         align-items: center; 
-        margin-top: auto;
         width: 100%; 
     }
 
     .imagen-yo img {
-        max-width:100vh; 
-        height: auto;
-        display: block;
+        max-width:80vh; 
+        position: fixed;
+        top: 20vh; 
+        transition: all 0.5s ease-out;
     }
+    
+    /* Cuando la imagen llega a #sobre-mi, se queda quieta */
+    .imagen-yo.stop-scroll img {
+
+        position: absolute !important;
+        top: auto;
+        bottom: 0;
+    
+       
+    }
+    
 
     hr {
         display: none;
@@ -413,5 +442,6 @@ button a {
         width: 30%;
     }
 
+   
     
 }
