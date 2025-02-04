@@ -383,21 +383,20 @@ button a {
     }
 
     .imagen-yo img {
-        max-width:80vh; 
-        position: fixed;
-        top: 20vh; 
+        position: fixed; /* Mantiene la imagen fija en la pantalla */
+        top: 20vh; /* Ajusta la altura inicial */
+      
+        max-width: 80vh;
         transition: all 0.5s ease-out;
     }
     
-    /* Cuando la imagen llega a #sobre-mi, se queda quieta */
+    /* Cuando la imagen llega al final de #sobre-mi, se queda quieta */
     .imagen-yo.stop-scroll img {
-
         position: absolute !important;
-        top: auto;
         bottom: 0;
-    
-       
+        right: 10vw;
     }
+    
     
 
     hr {
