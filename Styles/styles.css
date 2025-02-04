@@ -153,8 +153,7 @@ nav.desktop-nav {
 .imagen-yo img {
     width: 100%;
     height: auto;
-    border-radius: 50%;
-    object-fit: cover; 
+    
 }
 /* About Section */
 #sobre-mi {
@@ -261,8 +260,7 @@ button a {
     .imagen-yo img {
         width: 100%;
         height: auto;
-        border-radius: 50%;
-        object-fit: cover; 
+        
     }
 
     .hero-text {
@@ -338,51 +336,53 @@ button a {
     /*hero*/
     
     #hero{
-        display: inline;
+        display: flex;
         height: auto;
+        justify-content: center;
         
     }
     
     #heroe {
-        width: 90%;
-        display: flex;
+        width: 99%;
+        /* display: flex; */
         height: 80vh;
         place-content: center flex-end;
         align-items: flex-end;
+        margin-top: 10vh;
     }
     .hero-text{ 
-       
+       position: absolute;
         text-align: right;
-        width: 50%;
+        bottom: 0;
+        right: 2vw;
+        
     }
     .imagen-yo {
-        position: -webkit-sticky;
-        position: -moz-sticky;
-        position: -ms-sticky;
-        position: -o-sticky;
-        position: sticky;
-        height: 0;
-        width: 50%;
-        top: 15vh;
-       
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        margin-top: auto;
+        width: 100%; 
+    }
+
+    .imagen-yo img {
+        max-width:100vh; 
+        height: auto;
+        display: block;
     }
 
     hr {
         display: none;
     }
 
-    .imagen-yo {
-        position: -webkit-sticky;
-        position: -moz-sticky;
-        position: -ms-sticky;
-        position: -o-sticky;
-        position: sticky;
-        height: 0;
+    .texto-mayor{
+        position: absolute;
+        top: 50vh;
         width: 50%;
-        top: 15vh;
-        
-       
+        left: 2vw;
     }
+
+
 
     #sobre-mi {
         width: 90%;
