@@ -354,9 +354,11 @@ button a {
     /*hero*/
     
     #hero{
+        height: 200vh;
         display: flex;
         height: auto;
         justify-content: center;
+        flex-direction: column;
         
     }
     
@@ -375,27 +377,25 @@ button a {
         right: 2vw;
         
     }
-    .imagen-yo {
-        display: flex;
-        justify-content: center;
-        align-items: center; 
-        width: 100%; 
-    }
 
-    .imagen-yo img {
-        position: fixed; /* Mantiene la imagen fija en la pantalla */
-        top: 20vh; /* Ajusta la altura inicial */
-      
-        max-width: 80vh;
-        transition: all 0.5s ease-out;
+    
+    .imagen-yo {
+        position: sticky;
+       width: 100%;
+       display: flex;
+       justify-content: center;
+
     }
     
-    /* Cuando la imagen llega al final de #sobre-mi, se queda quieta */
-    .imagen-yo.stop-scroll img {
-        position: absolute !important;
-        bottom: 0;
-        right: 10vw;
+    .imagen-yo img {
+        width: 90vh;
+        margin-top: 10vh;
+        
+      
     }
+   
+    
+    
     
     
 
@@ -414,7 +414,7 @@ button a {
 
     #sobre-mi {
         width: 90%;
-        height: 90vh;
+        height: 100vh;
         align-content: center;
         background: white;
         margin: 0px 50px 0px;
