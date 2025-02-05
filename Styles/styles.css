@@ -13,7 +13,7 @@
     box-sizing: border-box;
 }
 body, html {
-    overflow-x: hidden;
+  
 }
 html {
     scroll-behavior: smooth;
@@ -354,10 +354,10 @@ button a {
     /*hero*/
     
     #hero{
-        height: fit-content;
+        height: 200vh;
+        
         overflow: visible;
         display: flex;
-        height: auto;
         justify-content: center;
         flex-direction: column;
         align-items: center;
@@ -383,8 +383,9 @@ button a {
     
     .imagen-yo {
         position: sticky;
-        height: 100vh;
-       width: 70vh;
+        height: auto;
+        top: 10vh;
+       width: 80vh;
        display: flex;
        align-items: flex-end;
        justify-content: center;
@@ -392,7 +393,8 @@ button a {
     }
     
     .imagen-yo img {
-        width: fit-content;
+        width: 100%;
+        height: auto;
         
     }
    
