@@ -12,9 +12,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-body, html {
+/* body, html {
   
-}
+} */
 html {
     scroll-behavior: smooth;
 }
@@ -382,7 +382,7 @@ button a {
 
     
     .imagen-yo {
-        position: sticky;
+        /* position: sticky; */
         height: auto;
         top: 10vh;
        width: 80vh;
